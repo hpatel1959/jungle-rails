@@ -1,2 +1,12 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<div class="jumbotron">
+  <h1 class="display-4">Store statistics</h1>
+  <p class="lead">Stay on top of all the stats—effortlessly, all in one place!</p>
+  <hr class="my-4">
+  <p>Total product categories: <%= @total_categories %></p>
+  <div class="total_products">
+    <p>Total products: <%= @total_products %></p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="<%= admin_products_path %>" role="button">Manage products</a>
+    </p>
+  </div>
+</div>
