@@ -1,0 +1,30 @@
+<h1 class="page-title">Sign up!</h1>
+
+<div class="form-group-container">
+  <%= form_for :user, url: '/users', html: { class: 'form-group' } do |f| %>
+    <div class="form-group login-form-detail">
+      <label for="user_first_name">First name</label>
+      <%= f.text_field :first_name, class: "form-control", id: "user_first_name", placeholder: "Enter first name" %>
+    </div>
+    <div class="form-group login-form-detail">
+      <label for="user_last_name">Last name</label>
+      <%= f.text_field :last_name, class: "form-control", id: "user_last_name", placeholder: "Enter last name" %>
+    </div>
+    <div class="form-group login-form-detail">
+      <label for="user_email">Email address</label>
+      <%= f.text_field :email, class: "form-control", id: "user_email", aria_describedby: "emailHelp", placeholder: "Enter email" %>
+    </div>
+    <div class="form-group login-form-detail">
+      <label for="user_password">Password</label>
+      <%= f.password_field :password, class: "form-control", id: "user_password", placeholder: "Password" %>
+    </div>
+    <div class="form-group login-form-detail">
+      <label for="user_password_confirmation">Password Confirmation</label>
+      <%= f.password_field :password_confirmation, class: "form-control", id: "user_password_confirmation", placeholder: "Password Confirmation" %>
+    </div>
+    <div class="submit-container">
+      <%= f.submit "Submit", class: "btn btn-primary submit-btn" %>
+    </div>
+  <% end %>
+</div>
+
