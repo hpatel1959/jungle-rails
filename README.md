@@ -73,8 +73,14 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## What the App Looks Like!
 
+### Website directs to login page if user is not signed in!
+
 !["Website directs to login page if user is not signed in!"](https://github.com/hpatel1959/jungle-rails/blob/master/docs/show-login.png?raw=true)
 
+### Lists all products on home page once user is logged in!
+
 !["Lists all products on home page once user is logged in!"](https://github.com/hpatel1959/jungle-rails/blob/master/docs/show-products.png?raw=true)
+
+### Shows user items in cart once added!
 
 !["Shows user items in cart once added!"](https://github.com/hpatel1959/jungle-rails/blob/master/docs/show-cart-with-items.png?raw=true)
